@@ -1,10 +1,12 @@
-import {Logo} from '../index.js';
+import {Logo, Nav} from '../index.js';
+import styles from './header.module.css';
 
 const Header = () => {
     return (
-        <div>
+        <header className={styles.header}>
             <Logo />
-        </div>
+            <Nav />
+        </header>
     );
 };
 

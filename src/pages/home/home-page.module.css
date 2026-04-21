@@ -1,0 +1,6 @@
+.page {
+    min-width: 100%;
+    /*min-height: 100vh;*/
+    background-color: #e1eef5;
+    border-radius: 30px;
+}
