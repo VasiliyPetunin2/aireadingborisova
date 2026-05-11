@@ -4,10 +4,10 @@ import {pages} from "../constants/pages.js";
 const NavigationContext = createContext();
 
 export const NavigationProvider = ({ children }) => {
-    const [page, setPage] = useState(pages.HOME.id);
+    const [currentPage, setCurrentPage] = useState(pages.HOME.id);
 
     return (
-        <NavigationContext.Provider value={{ page, setPage }}>
+        <NavigationContext.Provider value={{ currentPage, setCurrentPage }}>
             {children}
         </NavigationContext.Provider>
     );

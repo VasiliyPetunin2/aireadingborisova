@@ -5,16 +5,16 @@ import {useNavigation} from "./context/NavigationContext.jsx";
 import styles from "./App.module.css";
 
 function App() {
-    const {page, setPage} = useNavigation();
+    const {currentPage} = useNavigation();
     return (
         <div className={styles.container}>
             <Header />
 
-            {page === pages.HOME.id && <HomePage/>}
-            {page === pages.DIAGNOSIS.id && <DiagnosisPage/>}
-            {page === pages.READING.id && <ReadingPage/>}
-            {page === pages.FORPARENTSANDTEACHERS.id && <ForParentsAndTeachersPage/>}
-            {page === pages.ABOUT.id && <AboutPage/>}
+            {currentPage === pages.HOME.id && <HomePage/>}
+            {currentPage === pages.DIAGNOSIS.id && <DiagnosisPage/>}
+            {currentPage === pages.READING.id && <ReadingPage/>}
+            {currentPage === pages.FORPARENTSANDTEACHERS.id && <ForParentsAndTeachersPage/>}
+            {currentPage === pages.ABOUT.id && <AboutPage/>}
 
             <Footer />
         </div>

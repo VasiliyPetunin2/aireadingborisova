@@ -16,6 +16,12 @@
     border: #ffffff solid 3px;
     border-radius: 30px;
     padding: 10px 15px;
+
+    &:hover {
+        background-color: #ffffff;
+        border: #83acf7 solid 3px;
+        color: #83acf7;
+    }
 }
 
 .activePage {
