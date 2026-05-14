@@ -1,10 +1,19 @@
-import React from 'react';
+import {useState} from "react";
+import {LettersOne} from "../../components/exercises";
+import styles from './diagnosis-page.module.css';
 
 const DiagnosisPage = () => {
-    return (
-        <div>
+    const [stage, setStage] = useState('Буквы и буквосочетания');
 
-        </div>
+    return (
+        <section className={styles.page}>
+            <div className={styles.block}>
+                <h2>Диагностический модуль. {stage}</h2>
+                <LettersOne />
+                <h2>После выполнения задания нажми Далее</h2>
+                <button className={styles.btn}>Далее</button>
+            </div>
+        </section>
     );
 };
 

@@ -12,16 +12,12 @@
 
 .block {
     width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
     background-color: #ffffff;
     padding: 15px;
     border-radius: 30px;
-}
-
-.list {
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 15px;
-    margin-top: 15px;
+    row-gap: 30px;
 }
 
 .btn {
@@ -33,6 +29,7 @@
     border: #ffffff solid 3px;
     border-radius: 30px;
     padding: 15px 30px;
+    margin-left: auto;
 
     &:hover {
         background-color: #ffffff;
@@ -43,4 +40,8 @@
 
 h2 {
     margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 30px;
 }
