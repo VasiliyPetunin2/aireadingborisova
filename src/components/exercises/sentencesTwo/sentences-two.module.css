@@ -1,0 +1,41 @@
+.block {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 30px;
+    border: 3px solid black;
+    padding: 15px;
+    row-gap: 15px;
+    align-items: center;
+}
+
+h3, h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.wrapperColumns {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.column {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 15px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.input {
+    background-color: #83acf7;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.subtext {
+    font-weight: 700;
+}

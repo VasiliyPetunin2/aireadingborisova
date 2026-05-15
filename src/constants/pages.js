@@ -1,7 +1,22 @@
 export const pages = {
-    HOME: 'home',
-    DIAGNOSIS: 'diagnosis',
-    READING: 'reading',
-    FORPARENTSANDTEACHERS: 'forParentsAndTeachers',
-    ABOUT: 'about',
+    HOME: {
+        id: 'home',
+        name: 'Главная',
+    },
+    DIAGNOSIS: {
+        id: 'diagnosis',
+        name: 'Диагностика',
+    },
+    READING: {
+        id: 'reading',
+        name: 'Тренировка чтения',
+    },
+    FORPARENTSANDTEACHERS: {
+        id: 'forParentsAndTeachers',
+        name: 'Для родителей и учителей',
+    },
+    ABOUT: {
+        id: 'about',
+        name: 'О проекте'
+    },
 }

@@ -1,0 +1,55 @@
+/*.block {*/
+/*    display: flex;*/
+/*    flex-flow: column nowrap;*/
+/*    border-radius: 30px;*/
+/*    border: 3px solid black;*/
+/*    padding: 15px;*/
+/*    row-gap: 15px;*/
+/*    align-items: center;*/
+/*}*/
+
+/*h3 {*/
+/*    font-size: 24px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.list {*/
+/*    min-width: 10%;*/
+/*    display: flex;*/
+/*    flex-flow: row wrap;*/
+/*    gap: 15px;*/
+/*    background-color: #83acf7;*/
+/*    border-radius: 30px;*/
+/*    padding: 15px;*/
+/*}*/
+
+/*.word {*/
+/*    display: inline-block;*/
+/*    padding: 10px;*/
+/*    border-radius: 30px;*/
+/*    background-color: #ffffff;*/
+/*}*/
+
+/*.btnWrapper {*/
+/*    display: flex;*/
+/*    column-gap: 15px;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.btn {*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    white-space: nowrap;*/
+/*    color: #ffffff;*/
+/*    background-color: #83acf7;*/
+/*    border: #ffffff solid 3px;*/
+/*    border-radius: 30px;*/
+/*    padding: 15px 30px;*/
+/*    box-shadow: 1px 1px 2px darkgrey;*/
+
+/*    &:hover {*/
+/*        background-color: #ffffff;*/
+/*        border: #83acf7 solid 3px;*/
+/*        color: #83acf7;*/
+/*    }*/
+/*}*/

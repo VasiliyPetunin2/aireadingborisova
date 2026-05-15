@@ -1,0 +1,31 @@
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 12px;
+    margin-left: auto;
+}
+
+.btn {
+    flex: 1;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #83acf7;
+    border: #ffffff solid 3px;
+    border-radius: 30px;
+    padding: 10px 15px;
+
+    &:hover {
+        background-color: #ffffff;
+        border: #83acf7 solid 3px;
+        color: #83acf7;
+    }
+}
+
+.activePage {
+    background-color: #ffffff;
+    border: #83acf7 solid 3px;
+    color: #83acf7;
+}
