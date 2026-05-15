@@ -1,10 +1,11 @@
-import React from 'react';
+import placeholder from '/public/placeholderMonitoring.png';
+import styles from './for-parent-and-teachers-page.module.css';
 
 const ForParentsAndTeachersPage = () => {
     return (
-        <div>
-
-        </div>
+        <section className={styles.page}>
+            <div className={styles.placeholder} style={{ backgroundImage: `url(${placeholder})` }}></div>
+        </section>
     );
 };
 

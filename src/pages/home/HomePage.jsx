@@ -8,27 +8,21 @@ const HomePage = () => {
     return (
         <section className={styles.page}>
             <article className={styles.block}>
-                <h1>Главная</h1>
-                <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis
-                    cum ipsa necessitatibus praesentium qui ullam voluptates. Accusantium ad adipisci amet, commodi
-                    consequatur distinctio dolore doloremque dolorum ea error est laborum nesciunt nihil nobis numquam
-                    porro possimus praesentium qui rerum sit veritatis, vero, voluptas voluptates? Adipisci aliquid
-                    dolor dolores id illum impedit iusto, nemo nostrum officiis porro, quasi, rerum tempore velit vitae
-                    voluptatem? Atque error esse, fugit molestias nemo repellendus soluta temporibus vero. Ab cum
-                    cupiditate doloribus ducimus incidunt omnis quas sed tempore vitae. Amet asperiores eos, illum ipsam
-                    itaque modi, qui quos repellendus similique, totam ut vitae voluptatem voluptatum!</p>
+                <h1 className={styles.heading}>AI Reading</h1>
+                <h2 className={styles.subHeading}>Веб-ресурс для формирования техники чтения на английском языке младших школьников</h2>
+                <p className={styles.text}>Сайт помогает организовать диагностику, тренировку и коррекцию навыков чтения. В условиях фронтальной работы ресурс используется как инструмент адаптивной и наглядной тренировки.</p>
             </article>
-            <section className={styles.block}>
-                <h2>Как это работает?</h2>
-                <ol className={styles.listNumbered}>
-                    <li><span className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi facere similique? At consequatur, eius et harum, ipsam iusto, libero maiores minus mollitia natus nihil obcaecati quae quia similique vero.</span>
-                    </li>
-                    <li><span className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi facere similique? At consequatur, eius et harum, ipsam iusto, libero maiores minus mollitia natus nihil obcaecati quae quia similique vero.</span>
-                    </li>
-                    <li><span className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi facere similique? At consequatur, eius et harum, ipsam iusto, libero maiores minus mollitia natus nihil obcaecati quae quia similique vero.</span>
-                    </li>
-                </ol>
-            </section>
+            {/*<section className={styles.block}>*/}
+            {/*    <h2>Как это работает?</h2>*/}
+            {/*    <ol className={styles.listNumbered}>*/}
+            {/*        <li><span className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi facere similique? At consequatur, eius et harum, ipsam iusto, libero maiores minus mollitia natus nihil obcaecati quae quia similique vero.</span>*/}
+            {/*        </li>*/}
+            {/*        <li><span className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi facere similique? At consequatur, eius et harum, ipsam iusto, libero maiores minus mollitia natus nihil obcaecati quae quia similique vero.</span>*/}
+            {/*        </li>*/}
+            {/*        <li><span className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi facere similique? At consequatur, eius et harum, ipsam iusto, libero maiores minus mollitia natus nihil obcaecati quae quia similique vero.</span>*/}
+            {/*        </li>*/}
+            {/*    </ol>*/}
+            {/*</section>*/}
             <ul className={styles.list}>
                 <li>
                     <button onMouseDown={() => setCurrentPage(pages.DIAGNOSIS.id)} className={styles.btn}>Начать
