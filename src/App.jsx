@@ -1,4 +1,4 @@
-import {HomePage, DiagnosisPage, ReadingPage, ForParentsAndTeachersPage, AboutPage} from "./pages/index.js";
+import {HomePage, DiagnosisPage, ReadingPage, ForParentsAndTeachersPage} from "./pages/index.js";
 import {Header, Footer} from "./components/index.js";
 import {pages} from "./constants/pages.js";
 import {useNavigation} from "./context/NavigationContext.jsx";
@@ -14,7 +14,6 @@ function App() {
             {currentPage === pages.DIAGNOSIS.id && <DiagnosisPage/>}
             {currentPage === pages.READING.id && <ReadingPage/>}
             {currentPage === pages.FORPARENTSANDTEACHERS.id && <ForParentsAndTeachersPage/>}
-            {currentPage === pages.ABOUT.id && <AboutPage/>}
 
             <Footer />
         </div>

@@ -15,8 +15,4 @@ export const pages = {
         id: 'forParentsAndTeachers',
         name: 'Для родителей и учителей',
     },
-    ABOUT: {
-        id: 'about',
-        name: 'О проекте'
-    },
 }
