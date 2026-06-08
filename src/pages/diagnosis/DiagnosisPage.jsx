@@ -1,13 +1,10 @@
 import {useState} from "react";
-import {LettersOne} from "../../components/exercises";
 import {
     DiagnosisOne,
     DiagnosisTwo,
     DiagnosisThree,
     DiagnosisFour,
-    DiagnosisFive,
-    DiagnosisSix,
-    DiagnosisSeven
+    DiagnosisFive
 } from "../../components/exercises/diagnosis/index.js";
 import styles from './diagnosis-page.module.css';
 
@@ -27,10 +24,6 @@ const DiagnosisPage = () => {
                 <DiagnosisFour />
                 <h2>Упражнение 5</h2>
                 <DiagnosisFive />
-                <h2>Упражнение 6</h2>
-                <DiagnosisSix />
-                <h2>Упражнение 7</h2>
-                <DiagnosisSeven />
                 <h2>После выполнения заданий нажми Далее</h2>
                 <button className={styles.btn}>Далее</button>
             </div>

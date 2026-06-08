@@ -4,7 +4,7 @@ import styles from './sentences-one.module.css';
 import {useState} from "react";
 
 
-export const SentencesOne = () => {
+export const SentencesOne = ({setExercise}) => {
     const [isRunning, setIsRunning] = useState(false);
 
     return (
@@ -38,6 +38,7 @@ export const SentencesOne = () => {
                 <Timer isRunning={isRunning} />
                 <button onMouseDown={() => setIsRunning(false)} className={styles.btn}>Стоп</button>
             </div>
+            <button onMouseDown={() => setExercise({section: 'Предложения', id: 'sentences2'})} className={styles.btn} style={{marginLeft: 'auto'}}>Далее</button>
         </div>
     );
 };

@@ -1,8 +1,8 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import Timer from "../../timer/Timer.jsx";
 import styles from './letters-two.module.css';
 
-export const LettersTwo = () => {
+export const LettersTwo = ({setExercise}) => {
     const [isRunning, setIsRunning] = useState(false);
 
     return (
@@ -89,6 +89,7 @@ export const LettersTwo = () => {
                 <Timer isRunning={isRunning}/>
                 <button onMouseDown={() => setIsRunning(false)} className={styles.btn}>Стоп</button>
             </div>
+            <button onMouseDown={() => setExercise({})} className={styles.btn} style={{marginLeft: 'auto'}}>Вернуться</button>
         </div>
     );
 };

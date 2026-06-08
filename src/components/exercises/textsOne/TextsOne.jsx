@@ -7,7 +7,7 @@ import styles from './texts-one.module.css';
 import React, {useState} from "react";
 import Timer from "../../timer/Timer.jsx";
 
-export const TextsOne = () => {
+export const TextsOne = ({setExercise}) => {
     const [isRunning, setIsRunning] = useState(false);
 
     return (
@@ -37,6 +37,7 @@ export const TextsOne = () => {
                 <Timer isRunning={isRunning}/>
                 <button onMouseDown={() => setIsRunning(false)} className={styles.btn}>Стоп</button>
             </div>
+            <button onMouseDown={() => setExercise({})} className={styles.btn} style={{marginLeft: 'auto'}}>Вернуться</button>
         </div>
     );
 };

@@ -1,7 +1,8 @@
 import dialogue from '../../../assets/IMG_0651.JPG';
 import styles from './sentences-two.module.css';
+import React from "react";
 
-export const SentencesTwo = () => {
+export const SentencesTwo = ({setExercise}) => {
     return (
         <div className={styles.block}>
             <h3>Прочитай диалог и выполни упражнение ниже</h3>
@@ -28,6 +29,7 @@ export const SentencesTwo = () => {
                     <input className={styles.input} type={'text'} />
                 </div>
             </div>
+            <button onMouseDown={() => setExercise({})} className={styles.btn} style={{marginLeft: 'auto'}}>Вернуться</button>
         </div>
     );
 };

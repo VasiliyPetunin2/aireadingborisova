@@ -4,9 +4,9 @@ import ocean from '../../../assets/ocean.png';
 import skate from '../../../assets/skate.png';
 import styles from './words-two.module.css';
 import Timer from "../../timer/Timer.jsx";
-import {useState} from "react";
+import React, {useState} from "react";
 
-export const WordsTwo = () => {
+export const WordsTwo = ({setExercise}) => {
     const wordCombinations = ['lift a double-decker bus', 'swim across the ocean', 'see through a door', 'skateboard'];
     const [isRunning, setIsRunning] = useState(false);
 
@@ -46,6 +46,7 @@ export const WordsTwo = () => {
                 <Timer isRunning={isRunning} />
                 <button onMouseDown={() => setIsRunning(false)} className={styles.btn}>Стоп</button>
             </div>
+            <button onMouseDown={() => setExercise({})} className={styles.btn} style={{marginLeft: 'auto'}}>Вернуться</button>
         </div>
     );
 };

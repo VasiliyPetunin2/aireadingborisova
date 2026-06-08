@@ -128,11 +128,11 @@ const ReadingPage = () => {
             </>}
             {exercise.id === 'letters1' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 1</h2>
-                <LettersOne/>
+                <LettersOne setExercise={(obj) => setExercise(obj)}/>
             </div>}
             {exercise.id === 'letters2' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 2</h2>
-                <LettersTwo/>
+                <LettersTwo setExercise={(obj) => setExercise(obj)}/>
             </div>}
             {exercise.id === 'letters3' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 3</h2>
@@ -144,11 +144,11 @@ const ReadingPage = () => {
             </div>}
             {exercise.id === 'words1' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 1</h2>
-                <WordsOne/>
+                <WordsOne setExercise={(obj) => setExercise(obj)}/>
             </div>}
             {exercise.id === 'words2' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 2</h2>
-                <WordsTwo/>
+                <WordsTwo setExercise={(obj) => setExercise(obj)}/>
             </div>}
             {exercise.id === 'words3' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 3</h2>
@@ -160,11 +160,11 @@ const ReadingPage = () => {
             </div>}
             {exercise.id === 'sentences1' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 1</h2>
-                <SentencesOne/>
+                <SentencesOne setExercise={(obj) => setExercise(obj)}/>
             </div>}
             {exercise.id === 'sentences2' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 2</h2>
-                <SentencesTwo/>
+                <SentencesTwo setExercise={(obj) => setExercise(obj)}/>
             </div>}
             {exercise.id === 'sentences3' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 3</h2>
@@ -176,7 +176,7 @@ const ReadingPage = () => {
             </div>}
             {exercise.id === 'texts1' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 1</h2>
-                <TextsOne/>
+                <TextsOne setExercise={(obj) => setExercise(obj)}/>
             </div>}
             {exercise.id === 'texts2' && <div className={styles.block}>
                 <h2>{exercise.section}, Упражнение 2</h2>

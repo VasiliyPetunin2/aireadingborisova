@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from "./words-one.module.css";
 import Timer from "../../timer/Timer.jsx";
 
-export const WordsOne = () => {
+export const WordsOne = ({setExercise}) => {
     const words = ['slim', 'fat', 'tall', 'short', 'beautiful', 'handsome', 'curly hair', 'straight hair', 'aunt', 'uncle', 'cousin'];
     const [isRunning, setIsRunning] = useState(false);
 
@@ -18,6 +18,7 @@ export const WordsOne = () => {
                 <Timer isRunning={isRunning} />
                 <button onMouseDown={() => setIsRunning(false)} className={styles.btn}>Стоп</button>
             </div>
+            <button onMouseDown={() => setExercise({section: 'Слова и словосочетания', id: 'words2'})} className={styles.btn} style={{marginLeft: 'auto'}}>Далее</button>
         </div>
     );
 };
